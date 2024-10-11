@@ -1,1 +1,1 @@
-Django-5.1
+基于Django和uwsgi的个人网站
