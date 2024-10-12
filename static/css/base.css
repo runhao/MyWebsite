@@ -1,0 +1,19 @@
+#footer{
+    margin-top: 1em;
+    background-color: #eee;
+    color: #555;
+}
+
+#content {
+    text-align: center;
+}
+
+div.website-info{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+}
+
+div.website-info p{
+    margin-bottom: 0;
+}

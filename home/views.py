@@ -4,5 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def hello(request):
-    return HttpResponse("runhao的新建网站！")
+def home(request):
+    return render(request, "home.html")
