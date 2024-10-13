@@ -1,5 +1,5 @@
 # 建立 python3.12 环境
-FROM dockerproxy.cn/library/python:3.12.2
+FROM registry.cn-chengdu.aliyuncs.com/runhaofu/python_docker_base
 
 MAINTAINER runhao
 
