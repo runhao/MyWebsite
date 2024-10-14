@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block content %}
-    {% include 'content.html' %}
+    {% load static %}
+    <h1>I Love 石燕!</h1>
+    <img src="{% static 'images/photo.jpg' %}" width="600px" height="600px" alt="Image">
 {% endblock %}
 
 {% block footer %}
