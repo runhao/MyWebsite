@@ -1,5 +1,4 @@
 const differ_time = document.getElementById("differ_time");
-debugger;
 let dd = Number(differ_time.children[1].innerHTML);
 let hh = Number(differ_time.children[2].innerHTML);
 let mm = Number(differ_time.children[3].innerHTML);
@@ -11,7 +10,6 @@ function fix(num, length) {
 function changeDate() {
     document.getElementById("differ_time").innerText = "在一起的"+fix(dd,2)+"天"+fix(hh,2)+"时"+fix(mm,2)+"分"+fix(ss,2)+"秒!";
     ss++;
-    debugger
     if(ss == 60){
         ss=0;
         mm++;
