@@ -9,8 +9,8 @@ ENV PYTHONUNBUFFERED 1
 # 设置pip源为国内源
 COPY pip.conf /root/.pip/pip.conf
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY naodongzhizao.com.key /usr/local/nginx/cert/ssl.key
-COPY naodongzhizao.com.pem /usr/local/nginx/cert/ssl.pem
+#COPY naodongzhizao.com.key /usr/local/nginx/cert/ssl.key
+#COPY naodongzhizao.com.pem /usr/local/nginx/cert/ssl.pem
 
 # 在容器内/var/www/html/下创建 文件夹
 RUN mkdir -p /var/www/html/my_website
