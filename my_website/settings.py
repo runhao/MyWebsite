@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'postgresql-website',
         'USER': 'user',
         'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'HOST': 'naodongzhizao.com',
         'PORT': '5432',
     }
 }
