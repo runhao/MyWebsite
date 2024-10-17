@@ -1,7 +1,7 @@
 # 建立 python3.12 环境
 FROM registry.cn-chengdu.aliyuncs.com/runhaofu/python_docker_base
 
-MAINTAINER runhao
+LABEL MAINTAINER=1549971272@qq.com
 
 # 设置 python 环境变量
 ENV PYTHONUNBUFFERED 1
