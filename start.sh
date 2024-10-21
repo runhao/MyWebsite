@@ -6,5 +6,6 @@
 nginx -c /etc/nginx/nginx.conf
 python /var/www/html/my_website/manage.py makemigrations&&
 python /var/www/html/my_website/manage.py migrate&&
-uwsgi --ini /var/www/html/my_website/uwsgi.ini
+uwsgi --ini /var/www/html/my_website/uwsgi.ini&&
+tail -f /dev/null
 # python manage.py runserver 0.0.0.0:8000
