@@ -27,3 +27,6 @@ RUN sed -i 's/\r//' ./start.sh
 
 # 设置start.sh文件可执行权限
 RUN chmod +x ./start.sh
+
+# 数据迁移，并使用uwsgi启动服务
+ENTRYPOINT /bin/bash ./start.sh
