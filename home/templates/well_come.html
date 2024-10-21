@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+{% block title %}
+欢迎
+{% endblock %}
+
+{% block header %}
+{% include 'header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <dialog open>
+            <p>欢迎燕燕大美女进入!</p>
+            <form method="dialog">
+                <button onclick="window.location.href='home'">是我</button>
+            </form>
+        </dialog>
+    </div>
+{% endblock %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock %}

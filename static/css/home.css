@@ -1,10 +1,14 @@
-#differ_time{
+#differTime{
     display: flow;
     font-size: x-large;
     font-weight: 600;
 }
 
-#differ_time span{
+#differTime span{
     font-size: x-large;
     font-weight: 600;
+}
+
+#girlFriend{
+    max-width: 60%;
 }

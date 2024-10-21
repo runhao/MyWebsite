@@ -21,3 +21,7 @@ def home(request):
     context = {"days": differ_time.days, "hour": format_number(differ_time.seconds/3600),
                "minute": format_number((differ_time.seconds % 3600)/60), "second": format_number(differ_time.seconds % 60)}
     return render(request, "home.html", context)
+
+
+def well_come(request):
+    return render(request, "well_come.html")
