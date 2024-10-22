@@ -1,7 +1,11 @@
-#footer{
+#footer {
     margin-top: 1em;
     background-color: #eee;
     color: #555;
+}
+
+#footer div a{
+    text-decoration: none;
 }
 
 #content {
@@ -9,12 +13,17 @@
     min-height: 300px;
 }
 
-div.website-info{
+#distributionCron {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+div.website-info {
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1.5em;
 }
 
-div.website-info p{
+div.website-info p {
     margin-bottom: 0;
 }
