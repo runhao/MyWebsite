@@ -3,6 +3,8 @@ pipeline {
 
     // agent { label 'HK' }
 
+    withCredentials([usernamePassword(credentialsId: "36751054-3b26-4634-b686-999abec4d0b0", usernameVariable: "DOCKER_USERNAME", passwordVariable: "DOCKER_PASSWORD")]){
+
     environment {
         DOCKER_USERNAME = "${env.DOCKER_USERNAME}"
         DOCKER_PASSWORD = "${env.DOCKER_PASSWORD}"
