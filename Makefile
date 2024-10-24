@@ -15,7 +15,7 @@ login:
 # Build the Docker image
 .PHONY: build
 build:
-    docker buildx build --platform linux/amd64,linux/arm64 --tag $(FULL_IMAGE_NAME) --push . || { echo "Build failed"; exit 1; }
+    docker buildx build --platform linux/amd64,linux/arm64 -t $(FULL_IMAGE_NAME) --push . || { echo "Build failed"; exit 1; }
 
 # Push the Docker image to the registry
 .PHONY: push
