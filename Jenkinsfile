@@ -7,7 +7,7 @@ pipeline {
         stage('withCredentials') {
             steps {
                 withCredentials([usernamePassword(credentialsId: '36751054-3b26-4634-b686-999abec4d0b0', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                  echo USERNAME
+                  echo DOCKER_USERNAME
                 }
                 echo 'Credentials SUCCESS'
             }
