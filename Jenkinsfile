@@ -4,34 +4,34 @@ pipeline {
     // agent { label 'HK' }
 
     withCredentials([usernamePassword(credentialsId: "36751054-3b26-4634-b686-999abec4d0b0", usernameVariable: "DOCKER_USERNAME", passwordVariable: "DOCKER_PASSWORD")]){
-
-    environment {
-        DOCKER_USERNAME = "${env.DOCKER_USERNAME}"
-        DOCKER_PASSWORD = "${env.DOCKER_PASSWORD}"
-    }
-
-    stages {
-        stage('Login to Docker Registry') {
-            steps {
-                sh "make login"
-            }
+        environment {
+            DOCKER_USERNAME = "${env.DOCKER_USERNAME}"
+            DOCKER_PASSWORD = "${env.DOCKER_PASSWORD}"
         }
 
-        stage('Build Docker Image') {
-            steps {
-                sh "make build"
+        stages {
+            stage('Login to Docker Registry') {
+                steps {
+                    sh "make login"
+                }
             }
-        }
 
-        stage('Push Docker Image') {
-            steps {
-                sh "make push"
+            stage('Build Docker Image') {
+                steps {
+                    sh "make build"
+                }
             }
-        }
 
-        stage('Clean Up') {
-            steps {
-                sh "make clean"
+            stage('Push Docker Image') {
+                steps {
+                    sh "make push"
+                }
+            }
+
+            stage('Clean Up') {
+                steps {
+                    sh "make clean"
+                }
             }
         }
     }
